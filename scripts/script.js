@@ -2,7 +2,7 @@ const taskDescriptionField = document.querySelector("input");
 const addTaskButtom = document.querySelector("button");
 const taskList = document.querySelector(".task-list");
 
-let tasks = ["Hello World!", "My name is Pavan"];
+let tasks = [];
 
 function initializaApp() {
   initalTasksRender();
