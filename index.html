@@ -3,32 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <title>TODO List</title>
   </head>
   <body>
     <header>
-      <h1>TODO List</h1>
+      <h1>todo list</h1>
     </header>
     <section id="main">
-      <form>
-        <input type="text" , name="task" />
-        <button type="submit">add</button>
-      </form>
-      <h2>tasks</h2>
-      <ul>
-        <li>task 1</li>
-        <li>task 2</li>
-        <li>task 3</li>
-      </ul>
+      <div class="form-container">
+        <form>
+          <input type="text" , name="task" placeholder="Add new task" />
+          <button type="submit">add</button>
+        </form>
+      </div>
+      <div class="tasks-container">
+        <h2>tasks</h2>
+        <ul class="task-list">
+          <li class="task-list-item">task 1</li>
+          <li class="task-list-item">task 2</li>
+          <li class="task-list-item">task 3</li>
+        </ul>
+      </div>
     </section>
     <footer>
-      <h3>made with 💖</h4>
-      <h4>follow me</h6>
+      <p>Copyright &copy; 2025 All rights reserved.</p>
+      <h3>
+        made with 💖 by
+        <a href="mailto:pavanganeshbutha@gmail.com" target="_blank"
+          >pavan ganesh butha</a
+        >
+      </h3>
+      <section class="follow-me-section"></section>
+      <h4>follow me</h4>
       <ul>
-        <li>youtube</li>
-        <li>linkdin</li>
-        <li>instagram</li>
+        <li class="follow-list-item">
+          <a
+            href="https://youtube.com/@pavanganeshbutha?si=vY80-kpiFrRc6Bud"
+            target="_blank"
+            >youtube</a
+          >
+        </li>
+        <li class="follow-list-item">
+          <a href="https://www.instagram.com/pavanganeshbutha" target="_blank">
+            instagram</a
+          >
+        </li>
       </ul>
     </footer>
     <script src="scripts/script.js"></script>

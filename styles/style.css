@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #eeeeee;
+  --blue: #00adb5;
+  --black: #393e46;
+  --deep_black: #222831;
+}
+
+body {
+  background-color: var(--grey);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+header {
+  height: 11vh;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: var(--deep_black);
+  color: var(--grey);
+
+  font-family: "Merriweather", serif;
+  font-weight: 800;
+  font-size: 18px;
+
+  margin-bottom: 25px;
+  box-shadow: 1px 2px 4px #eeeeee;
+}
+
+.form-container {
+  width: 55vw;
+  margin: 1% auto;
+  height: 7vh;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  width: 60%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 2px;
+  border-radius: 15px;
+}
+
+button {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  width: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 2px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  background-color: var(--deep_black);
+  color: var(--grey);
+}
+
+.tasks-container {
+  width: 45vw;
+  margin: 1% auto;
+  background-color: white;
+  text-align: center;
+  box-shadow: 1px 2px 4px #cccc;
+}
+.tasks-container > h2 {
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+  background-color: var(--blue);
+  color: var(--grey);
+}
+
+.task-list {
+  list-style-type: none;
+}
+
+.task-list-item {
+  padding: 1% 0;
+  border-bottom: 1px solid var(--black);
+  color: var(--deep_black);
+}
+
+footer {
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 25vh;
+  width: 100vw;
+  padding: 1% 0;
+  background-color: var(--black);
+  color: var(--blue);
+  text-align: center;
+  text-transform: capitalize;
+}
+.follow-me-section {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-family: "Merriweather", serif;
+  margin-bottom: 5px;
+  margin-bottom: 1%;
+}
+
+h3 {
+  margin-bottom: 1%;
+}
+h4 {
+  font-family: "Merriweather", serif;
+}
+
+.follow-list-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.follow-list-item a,
+a {
+  text-decoration: underline;
+  color: var(--blue);
+}
