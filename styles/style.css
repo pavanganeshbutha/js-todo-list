@@ -84,7 +84,6 @@ button {
 .tasks-container > h2 {
   font-family: "Merriweather", serif;
   text-transform: uppercase;
-  border-bottom: 1px solid black;
   padding: 5px 0;
   background-color: var(--blue);
   color: var(--grey);
@@ -97,7 +96,11 @@ button {
 .task-list-item {
   padding: 1% 0;
   border-bottom: 1px solid var(--black);
+  box-shadow: 1px 2px 4px #eeeeee;
   color: var(--deep_black);
+}
+.task-list-item:hover {
+  cursor: pointer;
 }
 
 footer {
