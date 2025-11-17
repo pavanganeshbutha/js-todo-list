@@ -14,16 +14,20 @@ function renderTaskOnPage(id, task) {
   newTask.append(task);
   newTask.classList.add("task-list-item");
   newTask.setAttribute("id", id);
+  newTask.addEventListener("click", deleteTask);
   taskList.append(newTask);
 }
 
+const deleteTask = function (event) {
+  const completedTask = event.srcElement;
+  const completedTaskId = completedTask.getAttribute("id");
+  tasks.splice(completedTaskId - 1, 1);
+  taskList.removeChild(completedTask);
+};
+
 function initalTasksRender() {
-  if (tasks.length === 0) {
-    renderTaskOnPage(0, "Enter task and hit add button!");
-  } else {
-    for (let task in tasks) {
-      renderTaskOnPage(task, tasks[task]);
-    }
+  for (let task in tasks) {
+    renderTaskOnPage(task, tasks[task]);
   }
 }
 
