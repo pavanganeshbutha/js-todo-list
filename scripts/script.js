@@ -1,12 +1,15 @@
 const taskDescriptionField = document.querySelector("input");
 const addTaskButtom = document.querySelector("button");
 const taskList = document.querySelector(".task-list");
+let currentYear = new Date().getFullYear();
+let copyrightYear = document.querySelector("span");
 
 let tasks = [];
 
 function initializaApp() {
   initalTasksRender();
   setupEventListeners();
+  copyrightYear.append(currentYear);
 }
 
 function renderTaskOnPage(id, task) {
